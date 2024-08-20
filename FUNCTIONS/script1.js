@@ -20,10 +20,23 @@
 // console.log(greet("DUDE"));
 
 // nested function
-function outerFunction(outervariable) {
-    return innerFunction(innervariable){
-        console.log(`Hello, ${outervariable} ${innervariable}!`);
+// function outerFunction(outervariable) {
+//     return innerFunction(innervariable){
+//         console.log(`Hello, ${outervariable} ${innervariable}!`);
+//     }
+// }
+
+
+//rest parameters
+
+function add(...values){
+    let sum = 0;
+    for (let i=0; i < values.length ; i++){
+        sum += values[i];
+
     }
+    console.log(sum);
 }
 
-const nestedft = 
+add(10,90,89);
+
