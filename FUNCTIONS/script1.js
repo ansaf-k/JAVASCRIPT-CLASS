@@ -29,14 +29,54 @@
 
 //rest parameters
 
-function add(...values){
-    let sum = 0;
-    for (let i=0; i < values.length ; i++){
-        sum += values[i];
+// function add(...values){
+//     let sum = 0;
+//     for ( let i of values){
+//         sum += i;
 
-    }
-    console.log(sum);
-}
+//     }
+//     console.log(sum);
+// }
 
-add(10,90,89);
+// add(10,90,89);
 
+// for in 
+
+// const numbers = {
+//     num1 : 10,
+//     num2 : 20,
+//     num3 : 30,
+//     num4 : 40
+// }
+
+// // for in loop
+// let sum = 0;
+// for (let x in numbers){
+//     sum += numbers[x];
+// }
+// console.log(sum); // Output: 100;
+
+
+// //for each 
+// const numbers = [10,20,30,40]
+
+// // for each loop
+// let sum = 0;
+// numbers.forEach((values) =>{
+//     sum += values;
+// })
+
+// console.log(sum);
+
+
+//example for reduce 
+const numbers = [100,120,140,160];
+
+let sum = numbers.reduce((total, num) => {
+    return total + num;
+});
+
+// function add(total,num){
+//     return total + num;
+// }
+console.log(sum);

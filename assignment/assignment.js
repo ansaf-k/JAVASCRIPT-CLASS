@@ -42,3 +42,6 @@ books = [...books,book4];
 copiedBooks = [...books];
 
 console.log(copiedBooks);
+
+//for each
+
