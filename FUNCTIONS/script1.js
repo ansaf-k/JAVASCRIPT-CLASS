@@ -69,14 +69,71 @@
 // console.log(sum);
 
 
-//example for reduce 
-const numbers = [100,120,140,160];
+// //example for reduce 
+// const numbers = [100, 120, 140, 160];
 
-let sum = numbers.reduce((total, num) => {
-    return total + num;
-});
+// let sum = numbers.reduce((total, num) => {
+//     return total + num;
+// });
 
 // function add(total,num){
 //     return total + num;
-// }
-console.log(sum);
+// // }
+// console.log(sum);
+
+
+// //Array map examples
+// const fruit = ["apple","orange", "pineapple", "banana", "avacado"]
+// const newArr = fruit.map((edit) => edit + "s")
+
+// // function editText(fruits){
+// //     return fruits + "s";
+// // }
+
+// console.log(newArr);
+
+
+
+const friends = [{
+        Name: "Habeebu",
+        Age: 21,
+        gender:"male"
+    },
+    {
+        Name: "shamnad",
+        age: 21,
+        gender:"male"
+    },
+    {
+        Name: "Thasni",
+        Age: 22,
+        gender:"female"
+    },
+    {
+        Name: "Shifna",
+        Age: 21,
+        gender: "female"
+    },
+    {
+        Name: "Kukku",
+        Age: 20,
+        gender:"female"
+    },
+]
+
+const femalefriends = friends.filter(friend => friend.gender === "female")
+
+console.log(femalefriends);
+const malefriends = friends.filter(checkmale)
+
+function checkmale(man){
+    return man.gender === "male"
+}
+
+console.log("male friends : " , malefriends);
+
+
+
+
+
+

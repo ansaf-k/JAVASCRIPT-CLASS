@@ -39,7 +39,7 @@ books = [...books,book4];
 
 // console.log(books);
 
-copiedBooks = [...books];
+let copiedBooks = [...books];
 
 console.log(copiedBooks);
 
