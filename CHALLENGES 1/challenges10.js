@@ -53,9 +53,30 @@
 //     console.log(`The team most chance to win is ${MinOdd === team1 ? game.team1 : game.team2}`);
 
     
-    //coding challenges 14
-    const poll = {
-        question: "What is your favourite programming language?",
-        options: ["0: JavaScript", "1: Python", "2: Rust", "3: C++"],
-        answers: new Array(4).fill(0), // This generates [0, 0, 0, 0].
-        };
+ 
+
+
+
+    //coding challenges 15
+    function checkDogs(dogsJulia, dogsKate){
+
+        const dogsJuliaCorrected = dogsJulia.slice(1,-2);
+
+        const allDogs = [...dogsJuliaCorrected,...dogsJulia]
+
+        allDogs.forEach((dog,i) => {
+            if (dog >= 3) {
+                console.log(`Dog number ${i+1} is an adult, and is ${dog} years old`);
+            }
+            else{
+                console.log(`Dog number ${i+1} is a puppy, and is ${dog}`);
+            }
+        })
+
+    }
+
+    const dogsJulia1 = [3, 5, 2, 12, 7];
+    const dogsKate1 = [4, 1, 15, 8, 3];
+
+    checkDogs(dogsJulia1,dogsKate1);
+    

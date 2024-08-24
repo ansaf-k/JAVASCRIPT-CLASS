@@ -15,6 +15,9 @@ const poll = {
             poll.answers[answer]++
             display()
         }
+        else{
+            alert("Invalid answer")
+        }
     }
     };
 
